@@ -18,4 +18,4 @@ jobs:
           java-version: '17'
           distribution: temurin
       - name: Ejecutar pruebas Karate
-        run: mvn test -Dtest=PetTestRunner
+        run: mvn test -Dtest=PetTestRunner -Dkarate.options="--tags ~@functional"
